@@ -140,21 +140,21 @@ text=Label(frame, image=photo).grid(row=0,columnspan=3)
 
 #Username label and entry
 loginUsernameLable = Label(frame, text="Username",font=("Arial CE", 14))
-loginUsernameLable.grid(row=1,column=0,)
+loginUsernameLable.grid(row=1,column=0,pady=20)
 
 loginUsernameEntry = Entry(frame, width=20)
-loginUsernameEntry.grid(row=1,column=1,)
+loginUsernameEntry.grid(row=1,column=1,pady=20)
 
 #Password label and entry
 loginPasswordLable = Label(frame, text="Password",font=("Arial CE", 14,))
-loginPasswordLable.grid(row=2,column=0,)
+loginPasswordLable.grid(row=2,column=0,pady=10)
 
 loginPasswordEntry = Entry(frame, width=20, show="*")
-loginPasswordEntry.grid(row=2,column=1,)
+loginPasswordEntry.grid(row=2,column=1,pady=10)
 
 #Login button
 login = Button(frame, text="Login", bg="#82E0AA", command= checkLogin)
-login.grid(row=4,column=0,padx=20)
+login.grid(row=4,column=0,pady=20)
 
 #Global profile variable
 var_name = StringVar()
@@ -168,6 +168,10 @@ securityQuestion2Entry = StringVar()
 
 #signUp button
 signUp = Button(frame, text="Sign Up", bg="#82E0AA", command = createProfile)
-signUp.grid(row=4,column=1)
+signUp.grid(row=4,column=1,pady=20)
+
+photo1=PhotoImage(file="bottom.png")
+# photo1=PhotoImage(file="funsmart1.png")
+text1=Label(frame, image=photo1).grid(row=7,columnspan=3,pady=160)
 
 root.mainloop()
