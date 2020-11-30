@@ -485,10 +485,10 @@ def nextQuestion(frame, SelectedBtn,i, j):
         multChoice3 = Button(Questionframe, text = multChoices[2], command = lambda:checkAns(Questionframe,SelectedBtn,correctAns,multChoices[2],i, j))
         multChoice4 = Button(Questionframe, text = multChoices[3], command = lambda:checkAns(Questionframe,SelectedBtn,correctAns,multChoices[3],i, j))
 
-        multChoice1.grid(row=1, column = 0, sticky=W)
-        multChoice2.grid(row=1, column = 1, sticky=W)
-        multChoice3.grid(row=2, column = 0, sticky=W)
-        multChoice4.grid(row=2, column = 1, sticky=W)
+        multChoice1.grid(row=1, column = 0, sticky=W,)
+        multChoice2.grid(row=1, column = 1, sticky=W,)
+        multChoice3.grid(row=2, column = 0, sticky=W,)
+        multChoice4.grid(row=2, column = 1, sticky=W,)
 
         # Call timer
         # seconds = 5

@@ -131,7 +131,7 @@ canvas.pack()
 frame = Frame(root, bg="white")
 frame.place(relwidth=0.8, relheight=0.8, relx=0.1, rely=0.1)
 
-photo=PhotoImage(file="funsmart1.png")
+photo=PhotoImage(file="funsmart.png")
 # photo1=PhotoImage(file="funsmart1.png")
 text=Label(frame, image=photo).grid(row=0,columnspan=3)
 # text=Label(frame, image=photo)

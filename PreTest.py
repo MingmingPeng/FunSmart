@@ -179,8 +179,9 @@ def main(Root, frame, subject):
     NextFrame.pack(side="bottom", fill="x")
 
     # Question = Label(Questionframe, text= "Welcome to the "+str(subject) + " pre-test, please click 'Next Question' to continue")
-    Question = Label(Questionframe,font=("Arial", 10), text= "Welcome to the "+str(subject) + " pre-test, please click 'Next Question' to continue")
-    Question.grid(row=0, column = 0)
+
+    Question = Label(Questionframe,font=("Arial", 11),wraplength=480, justify=LEFT, text= "Welcome to the "+str(subject) + " pre-test, please click 'Next Question' to continue")
+    Question.grid(row=1, column = 0)
 
     statusBar = Label(NextFrame, text=str(questionIndex)+" - "+str(totalQuestion))
     statusBar.pack(anchor = W)

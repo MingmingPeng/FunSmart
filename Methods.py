@@ -33,7 +33,7 @@ def getSubQuestion(subject,AllQuestionsList,AllAnswersList):
         questionList = AllQuestionsList[60:90]
         answerList = AllAnswersList[240:360]
         return getMultChoice(questionList, start, end, answerList)
-    elif subject == "All subject":
+    elif subject == "All subjects":
         questionList = AllQuestionsList[90:120]
         answerList = AllAnswersList[360:480]
         return getMultChoice(questionList, start, end, answerList)
